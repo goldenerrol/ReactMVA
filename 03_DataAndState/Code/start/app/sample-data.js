@@ -1,6 +1,6 @@
 module.exports = {
   "humans": {
-    "Rami Sayar" : {
+    "Dan Goldberg" : {
       "conversations": [
         {
           "who": "bot",
@@ -36,7 +36,7 @@ module.exports = {
         }
       ]
     },
-    "Jeremy Foster" : {
+    "Jessica Tremblay" : {
       "conversations": [
         {
           "who": "bot",
