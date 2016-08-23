@@ -10,6 +10,8 @@ var Link = ReactRouter.Link;
 
 var samples = require('./sample-data');
 
+import Message from './components/Message';
+
 var App = React.createClass({
   getInitialState: function() {
     return { 
@@ -121,15 +123,6 @@ var ConversationPane = React.createClass({
   }
 });
 
-var Message = React.createClass({
-  mixins: [PureRenderMixin],
-
-  render: function() {
-    return (
-      <p>{this.props.who} said: "{this.props.text}"</p>
-    )
-  }
-});
 
 var StorePane = React.createClass({
   renderStore: function(store){
