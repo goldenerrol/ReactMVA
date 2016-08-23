@@ -10,6 +10,7 @@ var Link = ReactRouter.Link;
 
 var samples = require('./sample-data');
 
+//import code from Message.js
 import Message from './components/Message';
 
 var App = React.createClass({
