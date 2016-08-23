@@ -19,6 +19,12 @@ var App = React.createClass({
   loadSampleData: function(){
     this.setState(samples);
   },
+  //User navigates to /conversation and never loads index page component will still be rendered
+  componentWillMount: function(){
+    if('human' in this.props.params) {
+      this.loadSampleData();
+    }
+  },
   render: function() {
     return (
       <div>
