@@ -1,4 +1,35 @@
 module.exports = {
+  "stores": {
+    "Joe's Pizza on Bloor Ave": {
+      "orders": [
+        {
+          "human": "Dan Goldberg",
+          "time": new Date(2016, 4, 5, 15, 11, 45, 0),
+          "pizzas": [{
+            "toppings": "Meat-Lovers",
+            "size": "S"
+          }],
+          "price": 15,
+          "address": "321 Sesame Street, Montreal, Canada",
+          "status": "In The Oven" // status := Open -> Confirmed -> In The Oven -> Delivered
+        },
+        {
+          "human": "Jess Tremblay",
+          "time": new Date(2016, 4, 4, 20, 31, 0, 0),
+          "pizzas": [{
+            "toppings": ["cheese"],
+            "size": "XL"
+          }],
+          "price": 15,
+          "address": "456 Fake Street, Montreal, Canada",
+          "status": "Delivered" // status := Open -> Confirmed -> In The Oven -> Delivered
+        }
+      ]
+    },
+    "Joe's Pizza on University Ave": {
+      "orders": []
+    }
+  },
   "humans": {
     "Dan Goldberg" : {
       "conversations": [
@@ -31,12 +62,12 @@ module.exports = {
             "size": "S"
           }],
           "price": 15,
-          "address": "321 Sesame Street, Montreal, Canada",
+          "address": "123 Sesame Street, Montreal, Canada",
           "status": "Confirmed" // status := Open -> Confirmed -> In The Oven -> Delivered
         }
       ]
     },
-    "Jessica Tremblay" : {
+    "Jess Tremblay" : {
       "conversations": [
         {
           "who": "bot",
@@ -55,7 +86,7 @@ module.exports = {
         },
         {
           "who": "human",
-          "text": "312 Fake Road, Apartment 204, Montreal, Canada",
+          "text": "456 Fake Street, Montreal, Canada",
           "time": new Date(2016, 4, 4, 20, 30, 45, 0)
         },
       ],
@@ -67,7 +98,7 @@ module.exports = {
             "size": "XL"
           }],
           "price": 15,
-          "address": "123 Sesame Street, Montreal, Canada",
+          "address": "456 Fake Street, Montreal, Canada",
           "status": "Delivered" // status := Open -> Confirmed -> In The Oven -> Delivered
         }
       ]
